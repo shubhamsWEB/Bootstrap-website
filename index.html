@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<title>Bootstrap Project</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+      #map {
+        height: 200px;
+        width: 100%;
+      }
+</style>
+</head>
+<body>
+	<!-- NAVBAR -->
+	<div class="container-fluid" style="height: 660px;background: url('bg002.png'); background-size: cover; background-repeat: no-repeat;">
+	<nav id="nav" class="navbar fixed-top navbar-expand-lg navbar-light bg-transperent">
+  <a class="navbar-brand" href="index.html"><img src="innolat.png"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html" style="margin-left: 40px;font-size: 25px; text-align: center; font-weight: bold;">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.html" style="color: #52FF33;margin-left: 40px;font-size: 25px; text-align: center;font-weight: bold;">About<p class="sub" style="font-size: 12px; display: none;">Information</p></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" style="color: #33ACFF;margin-left: 40px;font-size: 25px; text-align: center;font-weight: bold;">ILRNN<p class="sub" style="font-size: 12px; display: none;">Learning Platform</p></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="course.html" style="color: #33ACFF;margin-left: 40px;font-size: 25px; text-align: center;font-weight: bold;">Course<p class="sub" style="font-size: 12px; display: none;">What we offer</p></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html" style="color: #33ACFF;margin-left: 40px;font-size: 25px; text-align: center;font-weight: bold;">Contact<p class="sub" style="font-size: 12px; display: none;">Any Queries</p></a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+
+    	<!-- Button trigger modal -->
+<button type="button" class="btn btn-success" data-toggle="modal" data-target="#login" style="margin-left: 10px;">
+  Login
+</button>
+
+<!-- Modal -->
+	<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="title" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h2 class="modal-title" id="title">Login</h2>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        ...
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+	        <button type="button" class="btn btn-primary">Save changes</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#signup" style="margin-left: 10px;">
+  Signup
+</button>
+
+<!-- Modal -->
+	<div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="Modal-Title" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h2 class="modal-title" id="Modal-Title">Register</h2>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+	        <button type="button" class="btn btn-primary">Save changes</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+    </form>
+  </div>
+</nav>
+<!-- HEADER -->
+	<center><span class="type center"></span></center>
+	<div class="input-group mb-3 pos">
+	  <input type="text" class="form-control" placeholder="Search Course's" aria-label="Search Course's" aria-describedby="basic-addon2" style="margin-top: 70px; border-radius: 5px;">
+	  <div class="input-group-append">
+	    <button class="btn btn-primary" type="button" style="margin-top: 70px;">Search</button>
+	  </div>
+	</div>
+	</div>
+
+<!-- CARDS -->
+	<div class="jumbotron jumbotron-fluid" style="margin-bottom: 0;">
+	  <div class="container">
+	    <center><h1 class="display-4" style="margin-bottom: 10px; font-family: 'Bree Serif', serif; color: #3490dc;"><strong>INNOLAT PLATFORM</strong></h1></center>
+	    <hr class="my-8">
+	    <div class="card-deck">
+		  <div class="card card1" style="background: transparent;">
+		    <center><i class="fas fa-chalkboard-teacher fa-4x" style="color: #2779bd;"></i></center>
+		    <div class="card-body">
+		      <h5 class="card-title" style="color: #2779bd;">Industry-Oriented Curriculum</h5>
+		      <p class="card-text">Industry-ready courses with practical learning on latest technologies. Work on LIVE industry projects.</p>
+		    </div>
+		  </div>
+		  <div class="card card2" style="background: transparent;">
+		    <center><i class="fas fa-user-friends fa-4x" style="color: #ef5753;"></i></center>
+		    <div class="card-body">
+		      <h5 class="card-title" style="color: #ef5753;">Career Mentoring</h5>
+		      <p class="card-text">We work closely with the Industry. Our experts know what industry wants and will mentor you at every step in achieving your Dream.</p>
+		    </div>
+		  </div>
+		  <div class="card card3" style="background: transparent;">
+		    <center><i class="far fa-edit fa-4x" style="color: #4dc0b5;"></i></center>
+		    <div class="card-body">
+		      <h5 class="card-title" style="color: #4dc0b5;">Collaborative Blended Learning</h5>
+		      <p class="card-text">Combination of offline and online learning by blending unique advantages of both. Collaborate with peers and mentors for knowledge sharing.</p>
+		    </div>
+		  </div>
+		</div>
+
+		<div class="card-deck" style="margin-top: 20px;">
+		  <div class="card card4" style="background: transparent;">
+		    <center><i class="fas fa-male fa-4x" style="color: #51d88a;"></i></center>
+		    <div class="card-body">
+		      <center><h5 class="card-title" style="color: #51d88a;">Skilled Mentors</h5></center>
+		      <p class="card-text">Our vigour lies in our excellent mentors, innovative methodologies and our passion to Educate India.</p>
+		    </div>
+		  </div>
+		  <div class="card card5" style="background: transparent;">
+		    <center><i class="fas fa-book-open fa-4x" style="color: #794acf;"></i></center>
+		    <div class="card-body">
+		      <h5 class="card-title" style="color: #794acf;">Holistic Skill Development</h5>
+		      <p class="card-text">Focus on all-round development including technical and soft skills. Internship opportunities for deserving candidates.</p>
+		    </div>
+		  </div>
+		  <div class="card card6" style="background: transparent;">
+		    <center><i class="fas fa-laptop fa-4x" style="color: #f6993f;"></i></center>
+		    <div class="card-body">
+		      <h5 class="card-title" style="color: #f6993f;">Technology Platform</h5>
+		      <p class="card-text">Analytics driven cloud based technology platform for real-time learning tracking.</p>
+		    </div>
+		  </div>
+		</div>
+
+	  </div>
+	</div>
+<!-- NEWS LETTER -->
+	<div class="jumbotron jumbotron-fluid" style="background: #9933CC; margin-bottom: 0;">
+	  <div class="container">
+	  	<div class="row">
+	  		<div class="col-md-6">
+	    <h1 class="display-4" style="color: #fff; font-size: 40px; font-weight: bolder;">LATEST HAPPENINGS</h1>
+	    <p class="lead" style="color: #fff;">Subscribe for newsletter to get notified about latest happenings.</p>
+	    	</div>
+	    	<div class="col-md-4">
+	    		<div class="input-group mb-3 pos">
+				  <input type="text" class="form-control" placeholder="Your Email" aria-label="Search Course's" aria-describedby="basic-addon2">
+				  <div class="input-group-append">
+				    <button class="btn btn-primary" type="button">Submit</button>
+				  </div>
+				</div>
+	    	</div>
+	  	</div>
+	  </div>	  
+	</div>
+<!-- FEATURED -->
+	<div class="jumbotron">
+	  <h1 class="display-4">FEATURED IN</h1>
+	  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+	  <hr class="my-4">
+	  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+	  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+	</div>
+<!-- OUR TEAM -->
+<div class="oteam">	
+	<div class="container">
+		<center><h1 class="display-4" style="margin-bottom: 10px; font-family: 'Bree Serif', serif; color: #3490dc;"><strong>OUR TEAM</strong></h1></center>
+		<hr class="my-8">
+	    <div class="row">
+	        <div class="col-md-3 col-sm-6">
+	            <div class="our-team">
+	                <div class="pic">
+	                    <ul class="social">
+	                        <li><a href="#" class="fab fa-facebook"></a></li>
+	                        <li><a href="#" class="fab fa-twitter"></a></li>
+	                        <li><a href="#" class="fab fa-linkedin"></a></li>
+	                    </ul>
+	                    <img src="download.jpg">
+	                </div>
+	                <h3 class="title">MODI</h3>
+	                <span class="post">Web Developer</span>
+	            </div>
+	        </div>
+
+	        <div class="col-md-3 col-sm-6">
+	            <div class="our-team">
+	                <div class="pic">
+	                    <ul class="social">
+	                        <li><a href="#" class="fab fa-facebook"></a></li>
+	                        <li><a href="#" class="fab fa-twitter"></a></li>
+	                        <li><a href="#" class="fab fa-linkedin"></a></li>
+	                    </ul>
+	                    <img src="download.jpg">
+	                </div>
+	                <h3 class="title">MODI</h3>
+	                <span class="post">Web Designer</span>
+	            </div>
+	        </div>
+
+	        <div class="col-md-3 col-sm-6">
+	            <div class="our-team">
+	                <div class="pic">
+	                    <ul class="social">
+	                        <li><a href="#" class="fab fa-facebook"></a></li>
+	                        <li><a href="#" class="fab fa-twitter"></a></li>
+	                        <li><a href="#" class="fab fa-linkedin"></a></li>
+	                    </ul>
+	                    <img src="download.jpg">
+	                </div>
+	                <h3 class="title">MODI</h3>
+	                <span class="post">Web Designer</span>
+	            </div>
+	        </div>
+
+	        <div class="col-md-3 col-sm-6">
+	            <div class="our-team">
+	                <div class="pic">
+	                    <ul class="social">
+	                        <li><a href="#" class="fab fa-facebook"></a></li>
+	                        <li><a href="#" class="fab fa-twitter"></a></li>
+	                        <li><a href="#" class="fab fa-linkedin"></a></li>
+	                    </ul>
+	                    <img src="download.jpg">
+	                </div>
+	                <h3 class="title">MODI</h3>
+	                <span class="post">Web Developer</span>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+<div class="container">
+	    <div class="row">
+	        <div class="col-md-6 col-sm-6">
+	            <div class="our-team">
+	                <div class="pic">
+	                    <ul class="social">
+	                        <li><a href="#" class="fab fa-facebook"></a></li>
+	                        <li><a href="#" class="fab fa-twitter"></a></li>
+	                        <li><a href="#" class="fab fa-linkedin"></a></li>
+	                    </ul>
+	                    <img src="download.jpg">
+	                </div>
+	                <h3 class="title">MODI</h3>
+	                <span class="post">Web Developer</span>
+	            </div>
+	        </div>
+
+	        <div class="col-md-6 col-sm-6">
+	            <div class="our-team">
+	                <div class="pic">
+	                    <ul class="social">
+	                        <li><a href="#" class="fab fa-facebook"></a></li>
+	                        <li><a href="#" class="fab fa-twitter"></a></li>
+	                        <li><a href="#" class="fab fa-linkedin"></a></li>
+	                    </ul>
+	                    <img src="download.jpg">
+	                </div>
+	                <h3 class="title">MODI</h3>
+	                <span class="post">Web Designer</span>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+</div>				
+<!-- FOOTER -->
+	<div class="jumbotron bg-dark" style="margin-bottom: 0;">
+		<div class="row">
+	  		<div class="col-md-4">
+	  			<h2 style="color: #fff; margin-bottom: 30px; margin-left: 50px;">Connect</h2>
+			  	<ul style="display: flex; list-style-type: none;">
+			  		<li><i class="li fab fa-facebook-square fa-3x" style="color: #3b5998"></i></li>
+			  		<li><i class="li fab fa-twitter-square fa-3x" style="color: #1DA1F2"></i></li>
+			  		<li><i class="li fab fa-linkedin fa-3x" style="color: #0077B5"></i></li>
+			  		<li><i class="li fas fa-envelope-open fa-3x" style="color: #DB4437"></i></li>
+			  	</ul>
+			  	<div>
+			  		<p style="text-align: left; color: #fff; margin-left: 15px; margin-top: 40px;">
+			  			Corporate Office: 412, Fourth Floor, Golden Trade Center, New Rajendra Nagar, Raipur
+			  		</p>
+			  		<hr class="my-8">
+			  		<p style="text-align: left; color: #fff; margin-left: 15px; margin-top: 40px;">
+			  			Regional Office: NAGPUR, PUNE
+			  		</p>
+			  		<hr class="my-8">
+			  		<p style="text-align: left; color: #fff; margin-left: 15px; margin-top: 40px;">
+			  			Call us 91-91111-48000
+			  		</p>
+			  		<hr class="my-8">
+			  		<p style="text-align: left; color: #fff; margin-left: 15px; margin-top: 40px;">
+			  			info@innolat.com
+			  		</p>
+			  	</div>
+	  		</div>
+	  <div class="col-md-4">
+	  	<h2 style="color: #fff; margin-bottom: 30px; margin-left: 50px;">Find us here</h2>
+			  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.258549550287!2d81.66080970614178!3d21.221593643153845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a28dd1d85473dc1%3A0x6e825ffdad759ad5!2sInnolat+Technologies+Pvt+Ltd!5e0!3m2!1sen!2sin!4v1529085356978" width="400" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
+	<div class="col-md-4">
+		<div class="container">
+	  <img src="innolat.png" style="margin-top: 60px;">
+	  	</div>
+	  	<div class="container">
+	  <img src="ilrnn.png" style="width: 100px; height: 100px; margin-top: 50px; margin-left: 80px;">
+	  	</div>
+	</div>
+		</div>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjRfUZqlczT19eub8hpC8og55j-CDGS8s&callback=initMap" async defer></script>			
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script type="text/javascript" src="typed.min.js"></script>
+	<script>
+// When the user scrolls down 20px from the top of the document, slide down the navbar
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 660 || document.documentElement.scrollTop > 660) {
+        document.getElementById("nav").style.background = "#3d4852";
+        document.getElementById("nav").style.opacity = "1";
+    } else {
+        document.getElementById("nav").style.background = "transparent";
+    }
+}
+</script>
+<script>
+                var typed = new Typed('.type', {
+                strings: ["Learn Latest Technologies","Employability Enhancement Program","Are you Industry Ready ?"],
+                loop: true,
+                typeSpeed: 25,
+                backSpeed: 20,
+                startDelay: 1500,
+                backDelay: 1700,
+                                });
+    </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
